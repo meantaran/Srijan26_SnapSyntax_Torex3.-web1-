@@ -1,0 +1,855 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* 👈 change here */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.2px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --whatsapp: #25D366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.hero h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)),
+        url("https://i.pinimg.com/1200x/10/fc/70/10fc7044b274eed6f8de1b81975b3a89.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.glass {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+
+    padding: 20px 24px;
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    /* 🔥 IMPORTANT */
+    min-height: 180px;
+    /* keeps box stable */
+}
+
+.glass {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.hero {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
+header {
+    background: rgba(255, 255, 255, 0.65);
+    /* semi-transparent */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+header a,
+header .logo-text {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+
+
+header h1 {
+    color: var(--primary);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: var(--gray);
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.hero img {
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 14px 26px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    /* semi-transparent */
+    padding: 30px;
+    border-radius: 16px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+    color: #2563eb;
+    /* your brand blue */
+}
+
+.card p {
+    color: #0f172a;
+}
+
+
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step span {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* College Filter */
+.filter-box {
+    margin: 30px 0;
+    max-width: 400px;
+}
+
+.filter-box select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.75);
+    color: #0f172a;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.85);
+    transform: translateY(-6px);
+}
+
+#typingText {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.7;
+
+    /* 🔥 KEY FIX */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    /* prevents jumping */
+}
+
+#typingText::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
+.about-highlight {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+
+    /* ✨ Clean glow (not overkill) */
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.8),
+        0 0 12px rgba(255, 255, 255, 0.5);
+
+    letter-spacing: 0.4px;
+}
+
+.highlight-bg {
+    display: inline-block;
+    padding: 16px 20px;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.text-highlight {
+    display: inline-block;
+    color: #ffffff;
+
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+
+    /* 🔥 Glow Effect */
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 30px rgba(255, 255, 255, 0.4);
+
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+
+
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: var(--whatsapp);
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 200;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 300;
+}
+
+/* WhatsApp Popup */
+.wa-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 260px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 300;
+}
+
+.wa-popup-header {
+    background: #25D366;
+    color: white;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wa-popup-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card {
+    max-width: 300px;
+    /* 👈 controls box width */
+    width: 100%;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    /* 👈 4 boxes, natural width */
+    gap: 20px;
+    justify-content: start;
+    /* 👈 LEFT alignment */
+}
+
+.card {
+    max-width: 260px;
+    padding: 12px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.college-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.card {
+    padding: 12px 16px;
+    /* 👈 smaller padding */
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.college-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.wa-option {
+    padding: 14px;
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 500;
+    border-top: 1px solid #e5e7eb;
+}
+
+.wa-option:hover {
+    background: #f1f5f9;
+}
+
+
+.whatsapp-btn:hover {
+    opacity: 0.9;
+}
+
+section {
+    background: transparent;
+}
+
+
+form {
+    max-width: 520px;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.card {
+    max-width: 280px;
+    margin: auto;
+}
+
+
+form input,
+form select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.6);
+    color: #0f172a;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+form input::placeholder {
+    color: rgba(15, 23, 42, 0.6);
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+
+footer {
+    background: var(--dark);
+    color: #cbd5e1;
+    padding: 40px 8%;
+    margin-top: 80px;
+}
+
+.striped-text {
+    font-size: 24px;
+    /* 👈 smaller text */
+    font-weight: 900;
+    text-transform: uppercase;
+
+    background: repeating-linear-gradient(to bottom,
+            black 0px,
+            black 3px,
+            /* 👈 thinner stripes */
+            transparent 3px,
+            transparent 6px);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 1px;
+}
+
+
+#videos {
+    padding: 80px 8%;
+}
+
+.zigzag {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.zigzag-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.zigzag-video video {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.zigzag-text {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+}
+
+.zigzag-text h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.zigzag-text p {
+    color: var(--dark);
+}
+
+
+.zigzag-video video {
+    width: 100%;
+    max-width: 600px;
+    /* 🔥 increased from 420px */
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.zigzag-text {
+    max-width: 600px;
+    /* 🔥 bigger text box */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    /* 🔥 more padding */
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+}
+
+.zigzag-text h3 {
+    font-size: 28px;
+    /* 🔥 bigger heading */
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.zigzag-text p {
+    font-size: 17px;
+    /* 🔥 bigger paragraph */
+    line-height: 1.8;
+    color: var(--dark);
+}
+
+.zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    /* 🔥 more space between video & text */
+}
+
+#videos {
+    padding: 100px 10%;
+    /* 🔥 more breathing space */
+}
+
+
+.zigzag-video {
+    flex: 1.2;
+}
+
+.zigzag-text {
+    flex: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .zigzag-item {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}
+
+
+.college-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+
+.college-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
+
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    display: flex;
+    /* 👈 makes row */
+    align-items: center;
+    /* 👈 vertical alignment */
+    gap: 12px;
+    /* 👈 space between logo & text */
+}
+
+.college-logo {
+    width: 40px;
+    /* smaller for row layout */
+    height: 40px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 👈 4 in one row */
+    gap: 25px;
+}
+
+
+.card {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#testimonials {
+    padding: 80px 8%;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 in one row */
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.student-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.testimonial-card h4 {
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: var(--dark);
+}
+
+
+
+@media (max-width: 900px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+
+.testimonial-card {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.college-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 👈 4 in one row */
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row */
+    }
+}
+
+@media (max-width: 500px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        /* 1 per row */
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            background-attachment: scroll;
+        }
+    }
+
+}
+
+.no-bg {
+    background: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
